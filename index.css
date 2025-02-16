@@ -1,0 +1,605 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Oswald:wght@200..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+*{     
+padding: 0px;
+margin: 0px;
+box-sizing: border-box; 
+}
+body{
+    overflow-x: hidden!important;
+}
+.intro{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* background-color: black; */
+}
+video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(60%);
+}
+.navv{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navlef{
+    width: 50%;
+    height: 100%;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+.navlef img{
+    height: 100px;
+}
+.navrigh{
+    width: 50%;
+    height: 100%;
+    padding-right: 50px;
+}
+.navrigh button{
+    float: right;
+}
+.introword{
+    position: absolute;
+    font-family: "Oswald", sans-serif;
+}
+.introword h1{
+    font-size: 185px!important;
+}
+.help{
+    min-height: 630px;
+    width: 100%;
+    background-color: rgb(221, 213, 197);
+    padding: 50px;
+}
+.subhelp{
+    min-height: 580px;
+    width: 100%;
+    background-color: white;
+    border-radius: 30px;
+}
+.standing{
+    height: 630px;
+    float: right;
+    animation: bstand linear forwards;
+    animation-duration: 2s;
+    animation-timeline:view();
+    animation-range: entry;
+    scale: .2;
+    opacity: 0;
+}
+@keyframes bstand {
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+.standcon{
+    position: relative;
+    left: 30px;
+    top: 100px;
+}
+.standcon h1{
+    font-family: "Oswald", sans-serif;
+    font-size: 50px;
+}
+.standcon h3{
+    font-family: "Oswald", sans-serif;
+    font-size: 40px;
+    border-bottom: 6px red solid;
+    display: inline;
+}
+.pro h1{
+    font-family: "Oswald", sans-serif;
+    font-size: 40px;
+}
+.pro p{
+    padding-left: 100px!important;
+    padding-right: 100px!important;
+}
+.player{
+    height: 200px!important;
+    width: 180px!important;
+    /* border: 3px solid black!important; */
+    margin-bottom: 20px!important;
+    border-radius: 10px!important;
+    animation: playy linear;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-timeline:view();
+    animation-range: entry;
+}
+@keyframes playy {
+    to{
+        transform: skew(30deg);
+    }
+}
+.play2:hover{
+    scale: 0.955;
+    filter: hue-rotate(30deg);
+    cursor: pointer;
+    transition: 1s all;
+}
+.tennis{
+    min-height: 600px;
+    width: 100%;
+    background-color: rgb(221, 213, 197);
+    overflow: hidden!important;
+}
+.tent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tenleft{
+    height: 600px!important;
+    border-radius: 90% / 50%;
+}
+.tencont{
+    width: 90%!important;
+    padding-left: 40px!important;
+}
+.tencont h4{
+    font-family: "Oswald", sans-serif;
+}
+.tencont h1{
+    font-family: "Libre Baskerville", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+.tencont i{
+    font-size: 55px!important;
+}
+.tencont b{
+    font-size: 30px!important;
+    padding-left: 20px!important;
+}
+.tenright{
+    height: 600px!important;
+    width: 75%!important;
+    border-radius: 90% / 50%;
+}
+.tent button:hover{
+    background-color: black!important;
+    color: white!important;
+}
+.tencourt i{
+    font-size: 18px!important;
+}
+.tencourt a{
+    font-weight: bold;
+}
+.tencourt a:hover{
+    color: brown!important;
+}
+.tencourt b{
+    font-size: 24px!important;
+}
+.program{
+    min-height: 640px;
+    width: 100%;
+    background-color: rgb(221, 213, 197);
+    padding-top: 20px!important;
+    overflow: hidden!important;
+}
+.program h1{
+    font-family: "Libre Baskerville", serif;
+    font-weight: 900;
+    font-style: normal;
+}
+.kid{
+    height: 500px!important;
+    width: 350px!important;
+    border-radius: 20px!important;
+    background-color: white!important;
+}
+.kids{
+    background-image: url(./tennis4.jpeg);
+    background-size: cover;
+    background-position: center;
+    transform: skew(4deg);
+}
+.allage{
+    background-image: url(./all\ age.jpeg);
+    background-size: cover;
+    background-position: center;
+    transform: skew(4deg);
+}
+.adult{
+    background-image: url(./adult\ men.jpeg);
+    background-size: cover;
+    background-position: center;
+    transform: skew(4deg);
+}
+.kidd{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.agee{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.adul{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.kids:hover{
+    scale: 1.043;
+    box-shadow: 0px 0px 30px red;
+    transform: skew(0);
+    filter: brightness(80%);
+    cursor: pointer;
+}
+.allage:hover{
+    scale: 1.043;
+    box-shadow: 0px 0px 30px darkgreen;
+    transform: skew(0);
+    filter: brightness(80%);
+    cursor: pointer;
+}
+.adult:hover{
+    scale: 1.043;
+    box-shadow: 0px 0px 30px deeppink;
+    transform: skew(0);
+    filter: brightness(80%);
+    cursor: pointer;
+}
+.bottom{
+   position: absolute;
+   bottom: 0;
+}
+.ourteam{
+    min-height: 660px;
+    width: 100%;
+    background-color:  rgb(221, 213, 197);
+    padding-top: 50px!important;
+    overflow: hidden!important;
+}
+.ourteam h4{
+    font-family: "Oswald", sans-serif;
+}
+.ourteam h1{
+    font-family: "Libre Baskerville", serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 50px!important;
+}
+.ourteam h2{
+    font-family: "Oswald", sans-serif;
+}
+.team i{
+    font-size: 30px;
+    margin-left: 18px;
+    opacity: 0;
+}
+.team:hover i{
+    color: green;
+    opacity: 1;
+    cursor: pointer;
+    transition: 1s all;
+}
+.team1 i{
+    font-size: 30px;
+    margin-left: 18px;
+    opacity: 0;
+}
+.team1:hover i{
+    color: green;
+    opacity: 1;
+    cursor: pointer;
+    transition: 1s all;
+}
+.team2 i{
+    font-size: 30px;
+    margin-left: 18px;
+    opacity: 0;
+}
+.team2:hover i{
+    color: green;
+    opacity: 1;
+    cursor: pointer;
+    transition: 1s all;
+}
+.team3 i{
+    font-size: 30px;
+    margin-left: 18px;
+    opacity: 0;
+}
+.team3:hover i{
+    color: green;
+    opacity: 1;
+    cursor: pointer;
+    transition: 1s all;
+}
+.team{
+    height: 360px!important;
+    width: 260px!important;
+    border-radius: 20px!important;
+    background-image: url(./founder.jpg);
+    background-repeat: no-repeat;
+    transition: all 1s linear;
+    align-content: end;
+    padding-bottom: 30px!important;
+}
+.team:hover{
+    background-position: center;
+}
+.team1{
+    height: 360px!important;
+    width: 260px!important;
+    background-image: url(./lady\ coach\ 2.jpg);
+    background-repeat: no-repeat;
+    transition: all 1s linear;
+    background-size: cover;
+    border-radius: 20px!important;
+    align-content: end;
+    padding-bottom: 30px!important;
+}
+.team1:hover{
+    background-position: center;
+}
+.team2{
+    height: 360px!important;
+    width: 260px!important;
+    background-image: url(./coach\ 2.jpeg);
+    background-repeat: no-repeat;
+    transition: all 1s linear;
+    background-size: cover;
+    align-content: end;
+    padding-bottom: 30px!important;
+    border-radius: 20px!important;
+}
+.team2:hover{
+    background-position: center;
+}
+.team3{
+    height: 360px!important;
+    width: 260px!important;
+    border-radius: 20px!important;
+    background-image: url(./lady\ founder.jpeg);
+    background-repeat: no-repeat;
+    transition: all 1s linear;
+    background-size: cover;
+    align-content: end;
+    padding-bottom: 30px!important;
+}
+.team3:hover{
+    background-position: center;
+    cursor: pointer;
+    transition: 1s all;
+}
+.cen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.contact{
+    min-height: 528px;
+    width: 100%;
+    background-color: #6e8147e1;
+    overflow: hidden!important;
+}
+.colo{
+    height: 30px;
+}
+.conta{
+    padding: 50px!important;
+    
+}
+.conta h1{
+    font-family: "Oswald", sans-serif;
+    font-size: 35px!important;
+}
+.conta i{
+    font-size: 35px!important;
+    margin-right: 15px!important;
+    margin-top: 25px!important;
+    margin-bottom: 18px!important;
+}
+.contlog{
+    padding: 50px!important;
+    padding-top: 75px!important;
+}
+.contlog h3{
+    font-family: "Oswald", sans-serif;
+    font-size: 24px;
+}
+.contlog i{
+    font-size: 40px!important;
+    margin-left: 18px!important;
+    margin-top: 25px!important;
+}
+.contlog i:hover{
+    color: whitesmoke;
+    cursor: pointer;
+    transition: 1s all;
+}
+.conta i:hover{
+    color: brown;
+    cursor: pointer;
+    transition: 1s all;
+}
+
+/* ANIMATION */
+
+
+.over{
+    width: 100%;
+    height: 650px;
+    background-color: rgba(82, 153, 82, 0.699);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: overo;
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+    opacity: 0;
+    position: absolute;
+}
+.giff{
+    width: 100%;
+    height: 100%;
+}
+@keyframes overo {
+    0%{
+        opacity: 1;
+    }
+    25%{
+        opacity: 1;
+    }50%{
+        opacity: 1;
+    }75%{
+        opacity: 9;
+    }85%{
+        opacity: 8;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.main{
+    opacity: 0;
+    animation-name: ma;
+    animation-delay: 2.8s;
+    animation-fill-mode: forwards;
+}
+@keyframes ma {
+    0%{opacity: 0;}
+    25%{opacity: 0;}
+    50%{opacity: 0;}
+    75%{opacity: 0;}
+    90%{opacity: 9;}
+    100%{opacity: 1;}
+}
+
+
+/* MEDIA QUERIES */
+
+
+@media only screen and (min-width:992px) and (max-width:1400px) {
+    video{
+        height: 110vh;
+    }
+}
+
+@media only screen and (min-width:992px) and (max-width:1200px) {
+    .player{
+        width: 140px!important;
+    }
+}
+
+@media only screen and (max-width:1050px) {
+    .introword h1{
+        font-size: 135px!important;
+    }
+    video{
+        height: 101%;
+    }
+    .intro{
+        height: 120vh;
+    }
+    .team, .team1, .team2, .team3{
+        width: 230px!important;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .introword h1{
+        font-size: 85px!important;
+    }
+    .navlef{
+        padding-left: 35px;
+    } 
+    .navrigh{
+        padding-right: 35px;
+    }
+}
+
+@media only screen and (max-width:992px) {
+    .playerr{
+        display: flex;
+        justify-content: center;
+    }
+    .kidd{
+        justify-content: center;
+        margin-bottom: 40px!important;
+    }
+    .adul{
+        justify-content: center;
+        margin-top: 40px!important;
+        margin-bottom: 40px!important;
+    }  
+    .team, .team1, .team2, .team3{
+        width: 280px!important;
+    }
+    .contlog{
+        padding-top: 50px!important;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    .standcon{
+        font-size: 20px!important;
+        left: unset;
+        top: unset;
+        padding-right: 50px;
+    }
+    .pro p{
+        padding-left: 30px!important;
+        padding-right: 30px!important;
+    }
+        
+}
+
+@media only screen and (max-width:500px) {
+    .introword h1{
+        font-size: 40px!important;
+    }
+    .kid{
+        height: 400px!important;
+        width: 250px!important;
+    }    
+}
+
+@media only screen and (max-width:420px) {
+    .standing{
+        width: 280px;
+        height: 450px;
+    }  
+    .tencont{
+        padding-left: 30px!important;
+    } 
+    .colo{
+        width: 200px!important;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .navlef img{
+        height: 75px;
+    }  
+    .navlef{
+        padding-left: 20px;
+    } 
+    .navrigh{
+        padding-right: 20px;
+    }
+    .tenleft{
+        margin-top: 20px!important;
+        width: 200px!important;
+        height: 400px!important;
+    }
+}
